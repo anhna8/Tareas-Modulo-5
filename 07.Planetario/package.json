@@ -1,0 +1,12 @@
+{
+  "name": "07.planetario",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "explorar": "node index.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
