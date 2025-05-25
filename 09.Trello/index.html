@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Trello</title>
+</head>
+<body class="cuerpa">
+    <header> 
+        <h1>Tareas</h1>
+    </header>
+    <!--agregar el titulo, descripcion, estado, responsable(nombre)-->
+    <main>
+        <section id="formulario-tarea">
+            <h2>Agregar nueva tarea</h2>
+            <form id="task-form">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="pendiente">Pendiente</option>
+                    <option value="en-progreso">En progreso</option>
+                    <option value="terminada">Terminada</option>
+                </select>
+
+                <label for="responsable">Responsable:</label>
+                <input type="text" id="responsable" name="responsable" required>
+
+                <button type="submit">Guardar Tarea</button>
+            </form>
+        </section>
+
+        <!-- filtrar tareas por estado -->
+        <section id="contenedor-tareas">
+            <h2>Lista de Tareas</h2>
+            <div class="estado-container" id="pendientes">
+                <h3>Pendientes</h3>
+                <ul></ul>
+            </div>
+            <div class="estado-container" id="en-progreso">
+                <h3>En Progreso</h3>
+                <ul></ul>
+            </div>
+            <div class="estado-container" id="terminadas">
+                <h3>Terminadas</h3>
+                <ul></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
